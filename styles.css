@@ -185,4 +185,26 @@ section h2 {
         text-align: center;
         justify-content: center;
     }
+    
 }
+.download-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #003a74;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #0059b3;
+    transform: scale(1.05);
+}
+
