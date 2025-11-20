@@ -116,43 +116,15 @@
     <section class="skills" id="skills">
     <h2>Skills</h2>
 
-    <div class="accordion">
-
-        <div class="accordion-item">
-            <button class="accordion-header">Networking</button>
-            <div class="accordion-content">
-                <p>Experience with routing, switching, CNSE configurations, and networking infrastructure at Alstom.</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">Cybersecurity</button>
-            <div class="accordion-content">
-                <p>Coursework and internship experience covering cyber defense, security analysis, and threat prevention.</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">Programming</button>
-            <div class="accordion-content">
-                <p>Java (Object-Oriented), Python, SQL database querying, debugging, and code documentation.</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">CAD & Technical Tools</button>
-            <div class="accordion-content">
-                <p>CAD experience for engineering documentation and system design during Alstom internship.</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">Project & Program Management</button>
-            <div class="accordion-content">
-                <p>Forecasting, scheduling, cross-team coordination, and product release planning at Tobii Dynavox.</p>
-            </div>
-        </div>
-
+    <div class="skills-grid">
+        <div class="skill">Networking</div>
+        <div class="skill">Routing & Switching</div>
+        <div class="skill">Cybersecurity</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">SQL</div>
+        <div class="skill">CAD</div>
+        <div class="skill">Documentation</div>
     </div>
 </section>
 
@@ -190,30 +162,6 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    
-    <script>
-    const headers = document.querySelectorAll(".accordion-header");
-
-    headers.forEach(header => {
-        header.addEventListener("click", () => {
-            const content = header.nextElementSibling;
-
-            // Close other open items
-            document.querySelectorAll(".accordion-content").forEach(section => {
-                if (section !== content) {
-                    section.style.maxHeight = null;
-                }
-            });
-
-            // Toggle current item
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    });
-</script>
 
 </body>
 </html>
