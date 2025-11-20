@@ -105,50 +105,6 @@ section h2 {
     background: white;
     padding: 50px 10%;
 }
-/* Accordion Skills Section */
-.accordion {
-    max-width: 700px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.accordion-item {
-    background: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-}
-
-.accordion-header {
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 1.1rem;
-    background: #003a74;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.25s;
-}
-
-.accordion-header:hover {
-    background: #0059b3;
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    background: #f7f7f7;
-    transition: max-height 0.3s ease;
-}
-
-.accordion-content p {
-    padding: 15px 0;
-}
-
 
 .skills-grid {
     display: flex;
